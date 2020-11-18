@@ -51,7 +51,7 @@ class _ListViewAlunoState extends State<ListViewAluno> {
                         ),
                       ),
                       subtitle: Row(children: [
-                        Text('Curso: ${items[position].curso} - Cod: ${items[position].cod} - Turma: ${items[position].turma}',
+                        Text('Curso: ${items[position].curso} - Código: ${items[position].cod} - Turma: ${items[position].turma}',
                             style: new TextStyle(
                               fontSize: 18.0,
                               fontStyle: FontStyle.italic,

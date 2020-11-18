@@ -28,7 +28,7 @@ class DatabaseHelper {
         'CREATE TABLE aluno(id INTEGER PRIMARY KEY, nome TEXT, curso TEXT, cod TEXT, turma TEXT)');
   }
 
-  Future<int> inserirAluno(Aluno Aluno) async {
+  Future<int> inserirAluno(Aluno aluno) async {
     var dbClient = await db;
     var result = await dbClient.insert("aluno", aluno.toMap());
     return result;
